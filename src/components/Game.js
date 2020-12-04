@@ -297,7 +297,7 @@ class Game extends React.Component {
         if (this.state.isPlaying) {
             return (
                 <div className="App">
-                    <img className="flagImage" src={this.state.urlFlag} />
+                    <img className="flagImage" src={this.state.urlFlag} alt="Drapeau"/>
                     <button onClick={() => this._nextFlag(false)}>Passer</button>
                     <input value={this.state.inputPlayer} onChange={event => this._inputChanged(event)}></input>
                     <p>{this.state.score}/{this.flags.length}</p>
