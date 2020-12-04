@@ -283,7 +283,7 @@ class Game extends React.Component {
         this.setState({
             inputPlayer: event.target.value
         }, () => {
-            if (this.state.inputPlayer.toLowerCase() == this.flags[this.state.order[this.state.flagNumber]][1] || this.state.inputPlayer.toLowerCase() == this.flags[this.state.order[this.state.flagNumber]][2] || this.state.inputPlayer.toLowerCase() == this.flags[this.state.order[this.state.flagNumber]][3] || this.state.inputPlayer.toLowerCase() == this.flags[this.state.order[this.state.flagNumber]][4]) {
+            if (this.state.inputPlayer.toLowerCase() === this.flags[this.state.order[this.state.flagNumber]][1] || this.state.inputPlayer.toLowerCase() === this.flags[this.state.order[this.state.flagNumber]][2] || this.state.inputPlayer.toLowerCase() === this.flags[this.state.order[this.state.flagNumber]][3] || this.state.inputPlayer.toLowerCase() === this.flags[this.state.order[this.state.flagNumber]][4]) {
                 this._nextFlag(true);
                 this.setState({
                     inputPlayer: ""
